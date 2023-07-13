@@ -2,7 +2,7 @@
 This repository contains notes on multiple ways of how to install post-quantum version of OpenSSL.
 
 ## PHP OpenSSL extension remarks
-My main goal was to use `openssl_XXX` functions in the PHP, but as it turns out DSA, DH, RSA, and EC algorithms are [hardcoded in the OpenSSL PHP extension](https://github.com/open-quantum-safe/openssl/issues/433). Therefore, only few functions are usable (those, that do not require algorithm identifier, like `openssl_verify` and `openssl_sign`, but not `openssl_pkey_new`.
+My main goal was to use `openssl_XXX` functions in the PHP, but as it turns out DSA, DH, RSA, and EC algorithms are [hardcoded in the OpenSSL PHP extension](https://github.com/open-quantum-safe/openssl/issues/433). Therefore, only few functions are usable (those, that do not require algorithm identifier, like `openssl_verify` and `openssl_sign`, but not `openssl_pkey_new`).
 
 ## OQS-OpenSSLv1.1 fork - integrated functions for PHP - Not Recommended
 - follow instructions at [open-quantum-safe/openssl](https://github.com/open-quantum-safe/openssl#building)
